@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Header CSS*/
+.header {
+	height: 500px;
+	background-image: url('assets/images/1.jpg');
+}
+.nav {
+	background: #000 transparent;
+	height: 60px;
+}
+ul, li , a{
+	float: right;
+	text-decoration: none;
+	display: inline-block;
+	align-content: center;
+	padding: 4px;
+	padding-top: 15px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300px;
+
+}
+.txt-type {
+	content: '';
+}
+.welcome {
+	color: #fff;
+	padding-left: 35%;
+	padding-top: 150px;
+}
+button, .btn {
+	padding: 10px;
+	padding-left: 40px;
+	padding-top: 15px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+button {
+		height: 40px;
+		width: 150px;
+}
+h1 {
+	font-size: 40px;
+}
+span {
+	font-size: 30px;
+}
+
+
