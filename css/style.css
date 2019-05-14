@@ -120,3 +120,15 @@ span {
 	padding: 10px;
 } 
 
+
+/* Different Screen */
+@media (max-width: 1000px){
+	.header {
+		text-align: left;
+	}
+}
+@media (min-width: 1000px){
+	.services {
+		margin-right: 100px;
+	}
+}
