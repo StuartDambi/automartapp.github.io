@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
 /*
 *************************************************************************************************************
 **TABLE OF CONTENTS
@@ -6,6 +8,7 @@
 **CONSTANTS
 **HEADER CSS
 **SERVICES SECTION
+**PRODUCT FILTER
 */
 
 * {
@@ -33,7 +36,8 @@
 	height: 280px;
 }
 body {
-	background: #eaeaea url('../images/background.png');
+	background: #333 url('../images/background.png');
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -94,21 +98,26 @@ span {
 	width: 960px;
 	background: rgba(0,0,0,0.2);
 	box-shadow: 0px 2px 10px #888888;
-	height: 360px; 
+	height: 430px; 
 	padding-left: 15%;
 	border-radius: 5px;
 	margin: auto;
 	position: relative;
 	clear: both;
-	padding: 20px;
 }
 .title {
 	text-align: center !important;
 	text-decoration: underline;
-	text-decoration-color: rgb(37, 199, 37);
+	
+	padding-left: 20px;
 }
 .service-title {
 	font-size: 50px;
+	padding-left: 30%;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: rgb(37, 199, 37);
+
 }
 
 .service-items {
@@ -141,6 +150,87 @@ span {
 .btn-service:hover {
 	background: rgb(24, 173, 24);
 	transition: 0.8s;
+}
+
+
+/* THE PRODUCT FILTER */
+.top-deals {
+	padding-top: 50px;
+}
+.product-filter {
+	display: flex;
+	background-color: #333;
+	height: 50px;
+}
+.product-filter h1 {
+	flex-grow: 1;
+	padding-top: 10px;
+	padding-left: 20px;
+	font-size: 35px;
+	color: #fff;
+}
+.sort {
+	display: flex;
+	padding-top: 10px;
+}
+.collection-sort {
+	display: flex;
+	flex-direction: column;
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product-card {
+	padding: 2%;
+	flex-grow: 1;
+	flex-basis: 16%;
+	display: flex;
+	flex: 1 16%;
+	display: flex;
+	flex-direction: row;
+}
+.product-image img {
+	max-width: 100%;
+}
+.product-info {
+	margin-top: auto;
+	padding-top: 20px;
+	align-items: center;
+	font-size: 20px;
+}
+.btn-view {
+	display: block;
+	background: #6ab04c;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+	flex: 2 46%;
+}
+
+@media (max-width: 920px) {
+	.product-card {
+		flex: 1 21%;
+	}
+}
+@media (max-width: 600px) {
+	.product-card {
+		flex: 1 46%;
+	}
+}
+@media (max-width: 480px) {
+	.product-filter {
+		flex-direction: column;
+	}
+	.sort {
+		align-self: flex-start;
+	}
 }
 
 
