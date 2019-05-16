@@ -37,6 +37,10 @@ a {
     border-radius: 5px;
     box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
 }
+.qns {
+  display: flex;
+  padding: 20px;
+}
 input[type="text"], input[type="password"], input[type = "email"] {
     width: 250px;
     padding: 25px 0px;
