@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<meta name="keywords" content="AutoMart Application for Motor Vehichle trading made by Dambi Stuart">
+	<title>AutoMart</title>
+	<!-- Main Css -->
+  
+    <link rel="stylesheet" href="../css/details.css">
+
+</head>
+<body class="adminbody">
+<div class="header">
+    <li><a href="useradmin.html">Dashboard</a></li>
+</div>
+
+<!-- Car Details -->
+<div class="admin">
+	<div class="card">
+			<div class="top-section">
+				<img src="../images/lumbo2.jpg" alt="" id="image-container">
+				<div class="navi">
+					<img onclick="change_img(this)" src="../images/lambo1.jpg" alt="">
+					<img onclick="change_img(this)" src="../images/lumbo2.jpg" alt="" >
+					<img onclick="change_img(this)" src="../images/lumbo3.jpg" alt="" >
+				</div>
+				<div class="price">$800</div>
+			</div>
+		
+			<div class="product-info">
+				<div class="name">Lamboghini</div>
+                <div class="dis">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                <div class="actions">
+                    <ul class="action-btns">
+                        <div><li class="li-btn"><a href="#" class="btn-buy ac">Update</a></li> </div>
+                        <div><li class="li-btn"><a href="#" class="btn-buy ac">Sold</a></li> </div>
+                    </ul>
+                </div>
+                
+			</div>
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <footer>
+	<center>
+		<h3>The Auto-Mart</h3>
+	</center>
+	
+</footer> -->
+</body>
+<script>
+	var container = document.getElementById("image-container");
+
+function change_img(image) {
+    container.src = image.src;
+}
+</script>
+</html>

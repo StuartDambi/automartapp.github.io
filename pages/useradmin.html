@@ -4,153 +4,94 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<meta name="keywords" content="AutoMart Application for Motor Vehichle trading made by Dambi Stuart">
-	<title>AutoMart</title>
+	<title>AutoMart Admin</title>
 	<!-- Main Css -->
-	<link rel="stylesheet" href="../css/useradmin.css">
+	<link rel="stylesheet" href="../css/admin.css">
 
 </head>
 <body>
+<!-- THE HEADER -->
+<div id="header">
+    <center><img src="../images/img_avatar.png" alt="" id="adminlogo"></center><br>
+    <h1>AutoMart Admin Panel</h1>
+</div>
 
-<!-- Header Section -->
-<header>
-	<nav id="main fixed-nav">
-		<ul class="navigation">
-			<a href="../index.html" class="logo">Auto-Mart</a>
-			<li class="active"><a href="">Home</a></li>
-			<li><a href="../index.html">Services</a></li>
-			<li><a href="">Cars</a></li>
-			<li><a href="">Post</a></li>
-			<li><a href="">Cart</a></li>
-			<li><a href="signup.html">Register</a></li>
-			<li><a href="signin.html">Login</a></li>
-		</ul>
-	</nav>
-	<div class="welcome">
-		<h1>Auto-Mart Dealers</h1>
-	</div>
-</header><br><br><br>  <!-- End of Header Section-->
+<!-- THE SIDE BAR -->
+<div id="sidebar">
+    <ul class="main">
+        <li><a href="#" class="btn1">View Posts</a></li>
+        <li><a href="#" class="btn1">Update</a></li>
+        <li><a href="../index.html" class="btn1">Visit Site</a></li>
+    </ul>
+</div>
 
-<!-- Top Cars Available for Sale / Car Filterable Area -->
-<div class="top-deals">
-	<nav class="product-filter">
-		<h1>User Dashboard</h1>
-
-		<div class="sort">
-			<div class="collection-sort">
-				<label>Filter by:</label>
-				<select>
-                    <option value="/">All Cars</option>
-                    <option value="/">Sold</option>
-                    <option value="/">Cart</option>
-				</select>
-			</div>
-
-			<div class="collection-sort">
-				<label>Sort by:</label>
-				<select>
-					<option value="/">Featured</option>
-				</select>
-			</div>
-		</div>
-	</nav>
-
-	<section class="products">
-		<div class="product-card">
-			<div class="product-image">
-				<img src="../images/toyota.jpeg" alt="">
-				<div class="product-info">
-					<h5>BMW</h5>
-					<h6>$800</h6>
-					<a href="#" class="btn-view">Sold</a>
-				</div>
-			</div>	
-		</div>
-	<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/mustang.jpeg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="#" class="btn-view">Sold</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/4.jpg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="#" class="btn-view">Purchase</a>
-			</div>
-		</div>
-	</div>
-							<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/4.jpg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="#" class="btn-view">Purchase</a>
-			</div>
-		</div>
-	</div>
-				<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/4.jpg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="pages/details.html" class="btn-view">Purchase</a>
-			</div>
-		</div>
-	</div>
-					<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/4.jpg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="pages/details.html" class="btn-view">Purchase</a>
-			</div>
-		</div>
-	</div>
-					<!-- More Products -->
-	<div class="product-card">
-		<div class="product-image">
-			<img src="../images/4.jpg" alt="">
-			<div class="product-info">
-				<h5>BMW</h5>
-				<h6>$800</h6>
-				<a href="pages/details.html" class="btn-view">Purchase</a>
-			</div>
-		</div>
-	</div>
-
-	</section>
+<!-- THE MAIN DATA -->
+<div id="data">
+    <div class="top-deals">
+        <nav class="product-filter">
+    
+            <div class="sort">
+                <div class="collection-sort">
+                    <label>Filter by:</label>
+                    <select>
+                        <option value="/">All Cars</option>
+                    </select>
+                </div>
+    
+                <div class="collection-sort">
+                    <label>Sort by:</label>
+                    <select>
+                        <option value="/">Featured</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    
+        <section class="products" id="cars">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/toyota.jpeg" alt="">
+                    <div class="product-info">
+                        <h5>BMW</h5>
+                        <h6 class="price">$800</h6>
+                        <a href="userdetails.html" class="btn-view">Details</a>
+                    </div>
+                </div>	
+            </div>
+        <!-- More Products -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/mustang.jpeg" alt="">
+                <div class="product-info">
+                    <h5>BMW</h5>
+                    <h6 class="price">$800</h6>
+                    <a href="userdetails.html" class="btn-view">Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- More Products -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../images/4.jpg" alt="">
+                <div class="product-info">
+                    <h5>BMW</h5>
+                    <h6 class="price">$800</h6>
+                    <a href="userdetails.html" class="btn-view">Details</a>
+                </div>
+            </div>
+        </div>
+    
+                    <!-- More Products -->
+            </section>
+    </div>
+    
 </div>
 
 
 
 
 
-
-
-
-<footer class="footer-main">
-	<div>
-		<div class="footer-social">
-			<h4>AutoMart @2019</h4>
-		</div>
-	</div>
-</footer>
 </body>
 <!-- The JS -->
-<script src="js/typewriter.js"></script>
 </html>
