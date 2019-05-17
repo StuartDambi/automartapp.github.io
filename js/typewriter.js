@@ -1,51 +1,31 @@
-const TypeWriter = function(txtElement, words, wait = 3000) {
-    this.txtElement = txtElement;
-    this.words = words;
-    this.txt = '';
-    this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
-    this.type();
-    this.isDeleting = false;
+var pos = 0;
+var turn = 0;
+var data = ['Market','Purchase','Your DreamCar'];
+var speed = 200;
+
+setTimeout(typeWriter, speed);
+
+function typeWriter() {
+  if (pos < data[turn].length) {
+    document.getElementById("demo").innerHTML += data[turn].charAt(pos);
+    console.log(data[turn].charAt(pos));
+    pos++;
+    setTimeout(typeWriter, speed);
+  } else {
+  	setTimeout(erase, speed+100);
+  }
 }
 
-// The Type Method
-TypeWriter.prototype.type = function() {
-    //Current Index of Word
-    const current = this.wordIndex % this.words.length; //Error is here, length is not being recognized
-    //Get full text of every Word
-    const fullTxt = this.words[current];
-    // Check if Deleting
-    this.isDeleting ? this.txt = fullTxt.substring(0, this.txt.length - 1) : this.txt = fullTxt.substring(0, this.txt.length + 1);
-    // insert txt into Element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-    // Initial Type Speed
-    let typeSpeed = 300;
-    if(this.isDeleting){
-        typeSpeed /= 2;
+function erase() {
+	if (pos >= 0) {
+      var str=data[turn].toString().substring(0, pos);
+      document.getElementById("demo").innerHTML = str;
+      pos--;
+      setTimeout(erase, speed-100);
+    } else {
+      turn++;
+      if(turn>=data.length) 
+        turn=0;
+      setTimeout(typeWriter, speed);
     }
-    // if word is not complete
-    if(!this.isDeleting && this.txt ===fullTxt) {
-        //make a pause at end
-        typeSpeed = this.wait;
-        //set delete to true
-        this.isDeleting = true;
-    } else if(this.isDeleting && this.txt === ''){
-        this.isDeleting = false;
-        //move to next word
-        this.wordIndex++;
-        //pause before starting another word
-        typeSpeed = 500;
-    }
-
-    setTimeout(() => this.type(), typeSpeed);
 }
-// Init DOM Load
-document.addEventListener('DOMContentLoaded', init);
-
-// Init App
-function init(){
-    const txtElement = document.querySelector('.txt-type');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
-    const wait = txtElement.getAttribute('data-wait');
-    // Initialize the Type Writer
-    new TypeWriter(txtElement, words, wait);}
