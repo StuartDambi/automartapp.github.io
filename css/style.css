@@ -35,6 +35,9 @@
 	width: 250px;
 	height: 240px;
 }
+.clear {
+	clear: both;
+}
 body {
 	background: #333 url('../images/background.png');
 	font-family: 'Raleway', sans-serif;
@@ -117,8 +120,8 @@ span {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2em;
-	margin-top: -50px;
-	height: 510px;
+	margin-top: -200px;
+	height: 1000px;
 	border-radius: 5px;
 }
 .service {
@@ -151,9 +154,47 @@ span {
 	height: 180px;
 	padding: 1em 2em;
 }
+
+/* ABOUT US CSS */
+.about-us {
+	width: 100;
+	min-height: 200px;
+	margin: 2em 0;
+	padding-top: 500px;
+}
+.about {
+	width: 30%;
+  	margin-left: 0;
+  	margin-right: 20px;
+  	position: relative;
+  	font-size: 1.2em;
+  	line-height: 1.8em;
+  	float: left;
+  	font-style: oblique;
+  	text-transform: capitalize;
+  	font-weight: 600;
+}
+.about h3{
+	color: #128021;
+}
+.story {
+	width: 60%;
+	float: left;
+	line-height: 1.6em;
+	
+}
+.story p button {
+	text-align: center;
+	height: 30px;
+	width: 100px;
+	border-radius: 30px;
+}
+.story p button:hover {
+	background-color: rgb(17, 133, 52);
+}
 /* THE PRODUCT FILTER */
 .top-deals {
-	padding-top: 50px;
+	padding-top: 10px;
 }
 .product-filter {
 	display: flex;

@@ -1,6 +1,6 @@
 var pos = 0;
 var turn = 0;
-var data = ['Market','Purchase','Your DreamCar'];
+var data = ['Welcome','Purchase','Market','Your Dream Car'];
 var speed = 200;
 
 setTimeout(typeWriter, speed);
