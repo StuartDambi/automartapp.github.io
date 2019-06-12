@@ -109,7 +109,7 @@ span {
 	margin-bottom: 90px;
 }
 .content h1 {
-	color: #08080b;
+	color: rgb(2, 51, 2);
   	font-weight: 700;
   	font-size: 1.2em;
   	margin-bottom: 1em;
@@ -188,6 +188,12 @@ span {
 	height: 30px;
 	width: 100px;
 	border-radius: 30px;
+	padding: 0;
+	margin: auto;
+	cursor: pointer;
+	border: 0;
+	background:rgb(1, 29, 1);
+	color: #eaeaea;
 }
 .story p button:hover {
 	background: rgb(24, 173, 24);
