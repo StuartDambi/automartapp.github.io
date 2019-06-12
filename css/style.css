@@ -32,8 +32,8 @@
 	width: 16.66%;
 }
 .max-width {
-	width: 300px;
-	height: 280px;
+	width: 250px;
+	height: 240px;
 }
 body {
 	background: #333 url('../images/background.png');
@@ -97,65 +97,60 @@ span {
 
 
 /*SERVICES*/
+.wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+.content {
+	padding-top: 2.5em;
+	margin-bottom: 90px;
+}
+.content h1 {
+	color: #08080b;
+  	font-weight: 700;
+  	font-size: 1.2em;
+  	margin-bottom: 1em;
+}
 .services {
-	width: 960px;
-	background: rgba(0,0,0,0.2);
-	box-shadow: 0px 2px 10px #888888;
-	height: 430px; 
-	padding-left: 15%;
+	background: #ffffff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-top: -50px;
+	height: 510px;
 	border-radius: 5px;
-	margin: auto;
-	position: relative;
-	clear: both;
 }
-.title {
-	text-align: center !important;
-	text-decoration: underline;
-	
-	padding-left: 20px;
+.service {
+	width: 28%;
+	float: left;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 40px;
 }
-.service-title {
-	font-size: 50px;
-	padding-left: 30%;
-	font-family: 'Raleway', sans-serif;
-	text-decoration: underline;
-	text-decoration-color: rgb(37, 199, 37);
-
-}
-
-.service-items {
-	padding-top: 100px;
-	display: flex;
-	flex-direction: row;
+.service h3 {
+	font-weight: bold;
+	color: #211044;
+	padding: 12px 0;
+	font-size: 1.5em;
+	text-transform: capitalize;
 	text-align: center;
-	padding: 10px;
+	padding-top: 5px;
 }
-.image1 {
+.service p {
+	font-size: 0.9em;
+	line-height: 1.5;
+	text-align: center justify;
+}
+.service div img {
+	font-weight: 900;
+	font-size: 2em;
+	text-align: center;
+	width: 200px;
 	border-radius: 50%;
-	width: 200px !important;
-	height: 180px !important;
-	padding: 10px;
-} 
-.btn-service {
-	width: 80px;
-	height: 30px;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
-	padding: 0;
-	margin: auto;
-	cursor: pointer;
-	border: 0;
-	background:rgb(1, 29, 1);
-	color: #eaeaea;
+	height: 180px;
+	padding: 1em 2em;
 }
-.btn-service:hover {
-	background: rgb(24, 173, 24);
-	transition: 0.8s;
-}
-
-
 /* THE PRODUCT FILTER */
 .top-deals {
 	padding-top: 50px;
