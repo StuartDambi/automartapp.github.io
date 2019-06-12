@@ -133,7 +133,7 @@ span {
 }
 .service h3 {
 	font-weight: bold;
-	color: #211044;
+	color: rgb(1, 29, 1);;
 	padding: 12px 0;
 	font-size: 1.5em;
 	text-transform: capitalize;
@@ -175,7 +175,7 @@ span {
   	font-weight: 600;
 }
 .about h3{
-	color: #128021;
+	color: rgb(1, 29, 1);;
 }
 .story {
 	width: 60%;
