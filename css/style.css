@@ -190,7 +190,8 @@ span {
 	border-radius: 30px;
 }
 .story p button:hover {
-	background-color: rgb(17, 133, 52);
+	background: rgb(24, 173, 24);
+	transition: 0.8s;
 }
 /* THE PRODUCT FILTER */
 .top-deals {
